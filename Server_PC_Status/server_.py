@@ -23,5 +23,4 @@ while True:
 	conn.sendall(b'Battery: '+str(b.BatteryLifePercent).encode()+b' %\r\n')
 	b = a.get_ram_usage()
 	conn.sendall(b'Available Ram: '+str(b.ullAvailPhys/1024/1024/1024).encode()+b' GB\r\n')
-
 	
